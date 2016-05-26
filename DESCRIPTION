@@ -1,0 +1,17 @@
+Package: remotefile
+Title: Remote Files
+Version: 0.1.0
+Description: Fetch files from remote places as they are needed.
+Depends:
+    R (>= 3.2.4)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Author: Rich FitzJohn
+Maintainer: Rich FitzJohn <rich.fitzjohn@gmail.com>
+Imports:
+    jsonlite,
+    progress,
+    storr
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
