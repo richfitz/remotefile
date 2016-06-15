@@ -35,7 +35,7 @@ download_file <- function(url, dest) {
   if (status != 0) {
     stop("Download failed with code ", status)
   }
-  ok <- file.rename(tmp, dest)
+  ok <- suppressWarnings(file.rename(tmp, dest))
   if (!ok) {
     ## Linux
     ok <- file.copy(tmp, dest, overwrite=TRUE)
