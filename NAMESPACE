@@ -2,6 +2,7 @@
 
 S3method(print,remotefile)
 export(create_index)
+export(is_remotefile_dest)
 export(remotefile_fetch)
 export(remotefile_init)
 export(remotefile_list)

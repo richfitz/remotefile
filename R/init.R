@@ -39,3 +39,11 @@ print.remotefile <- function(x, ...) {
   cat(sprintf("          (%d files)\n", nrow(x$index)))
   invisible(x)
 }
+
+##' Check if a path is a remotefile destination
+##' @title Check if a path is a remotefile destination
+##' @param path Path to test (a directory)
+##' @export
+is_remotefile_dest <- function(path) {
+  file.exists(path_config(path))
+}
